@@ -34,8 +34,8 @@ var obj = {
 
 var newObj = extendDeeply(obj);
 console.log(newObj);
-console.log(newObj === obj);
-console.log(newObj.subObj === obj.subObj);
-console.log(newObj.hobby === obj.hobby);
-console.log(newObj.subObj.fn === obj.subObj.fn);
-console.log(newObj.f === obj.f);
+console.log(newObj === obj);    // false
+console.log(newObj.subObj === obj.subObj);  // false
+console.log(newObj.hobby === obj.hobby);    // false
+console.log(newObj.subObj.fn === obj.subObj.fn);    // true
+console.log(newObj.f === obj.f);    // true
