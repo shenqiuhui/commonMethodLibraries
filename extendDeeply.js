@@ -5,6 +5,7 @@
  */
 function extendDeeply(options, target) {
     var target = target || {};
+
     for(var prop in options) {
         if(typeof options[prop] == 'object') {
             target[prop] = options[prop] instanceof Array ? [] : {};
@@ -13,6 +14,7 @@ function extendDeeply(options, target) {
             target[prop] = options[prop];
         }
     }
+
     return target;
 }
 
