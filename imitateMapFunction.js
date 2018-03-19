@@ -19,3 +19,21 @@ Array.prototype._map = function (fn, obj) {
 
     return temp;
 }
+
+
+// 案例
+var arr = [1, 2, 3, 4, 5];
+var obj = {
+    a: 1
+};
+
+arr._map(function (item, idx, arr) {
+    console.log(item, idx, arr, this);
+    return item + '%';
+}, obj);
+
+// 1 0 [ 1, 2, 3, 4, 5 ] { a: 1 }
+// 2 1 [ 1, 2, 3, 4, 5 ] { a: 1 }
+// 3 2 [ 1, 2, 3, 4, 5 ] { a: 1 }
+// 4 3 [ 1, 2, 3, 4, 5 ] { a: 1 }
+// 5 4 [ 1, 2, 3, 4, 5 ] { a: 1 }
