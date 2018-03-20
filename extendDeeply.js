@@ -35,7 +35,6 @@ var obj = {
 };
 
 var newObj = extendDeeply(obj);
-
 console.log(newObj);
 console.log(newObj === obj);    // false
 console.log(newObj.subObj === obj.subObj);  // false
