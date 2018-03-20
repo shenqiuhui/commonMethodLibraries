@@ -19,6 +19,7 @@ function extendDeeply(options, target) {
 }
 
 
+
 // 示例
 var obj = {
     name: 'panda',
