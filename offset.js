@@ -4,7 +4,8 @@
  * @param {String} direction
  */
 function getElementDistance(element, direction) {
-    var attr = 'offset' + direction;
+
+    var attr = 'offset' + direction.charAt(0).toUpperCase + direction.slice(1);
     var actualDistance = element[attr];
     var current = element.offsetParent;
 
